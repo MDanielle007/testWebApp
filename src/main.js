@@ -6,7 +6,7 @@ import { loadFonts } from './plugins/webfontloader'
 import axios from 'axios'
 
 loadFonts()
-axios.defaults.baseUrl = 'http://trialbackend.test/'
+axios.defaults.baseURL = 'http://trialbackend.test/'
 
 createApp(App)
   .use(router)

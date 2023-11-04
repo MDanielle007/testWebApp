@@ -1,5 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import AdminDashboard from '../views/Admin/AdminDashboard.vue'
+import AdminLivestockManagement from '../views/Admin/AdminLivestockManagement.vue'
+import ReportAnalysis from '../views/Admin/AdminReportAnalyis.vue'
+import AdminNotifications from '../views/Admin/AdminNotifications.vue'
+import AuditTrail from '../views/Admin/AdminAuditTrail.vue'
+import AdminUserAccounts from '../views/Admin/AdminUserAccounts.vue'
+import AdminSettings from '../views/Admin/AdminSettings.vue'
+import AdminRegisterAccount from '../views/Admin/AdminRegisterAccount.vue'
 
 const routes = [
   {
@@ -8,12 +16,44 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    path: '/admin',
+    name: 'admin',
+    component: AdminDashboard
+  },
+  {
+    path: '/admin/livestock-management',
+    name: 'admin-livestock-management',
+    component: AdminLivestockManagement
+  },
+  {
+    path: '/admin/report-analysis',
+    name: 'admin-report-analysis',
+    component: ReportAnalysis
+  },
+  {
+    path: '/admin/notifications',
+    name: 'admin-notifications',
+    component: AdminNotifications
+  },
+  {
+    path: '/admin/audit-trail',
+    name: 'admin-audit-trail',
+    component: AuditTrail
+  },
+  {
+    path: '/admin/user-accounts',
+    name: 'admin-user-accounts',
+    component: AdminUserAccounts
+  },
+  {
+    path: '/admin/settings',
+    name: 'admin-settings',
+    component: AdminSettings
+  },
+  {
+    path: '/admin/register-account',
+    name: 'register-account',
+    component: AdminRegisterAccount
   }
 ]
 
