@@ -1,0 +1,6 @@
+Livestock_Type, Breed, Age, Sex, Date_Of_Birth, Health_Status, Record_Status
+Cow, Holstein, 3, Female, 2020-05-15, Healthy, Accessible
+Chicken, Leghorn, 1, Male, 2022-01-10, Healthy, Accessible
+Pig, Yorkshire, 2, Male, 2021-03-22, Healthy, Archive
+Sheep, Merino, 4, Female, 2019-11-07, Healthy, Accessible
+Goat, Boer, 2, Male, 2021-08-18, Healthy, Archive
